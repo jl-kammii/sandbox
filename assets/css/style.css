@@ -1,23 +1,15 @@
-body{
-    background-color: blue;
-}
+
 
 img {
     width: 300px;
 }
 
-.div1 {
-    background-color: red;
-}
-
 .div2{
-    background-color: black;
     height: 50px;
     display: inline-block;
 }
 
 p{
-    background-color: aqua;
     display: inline-block;
 }
 
@@ -56,4 +48,8 @@ ul{
     position: relative;
     display: inline-block;
     animation: turn 4s infinite linear;
+}
+
+.pause {
+    animation-play-state: paused;
 }
