@@ -1,39 +1,32 @@
+body {
+    background-image: url('https://www.10wallpaper.com/wallpaper/1920x1200/1501/atlantic_ocean-Nature_HD_Wallpaper_1920x1200.jpg');
+    background-size: cover;
+    color: white;
+}
 
+li {
+    list-style-type: none;
+}
 
-img {
+li img {
+    max-width: 200px;
+    max-height: 100px;
+    border-radius: 20%;
+}
+
+.vinyl {
     width: 300px;
 }
 
-.div2{
-    height: 50px;
-    display: inline-block;
-}
 
-p{
-    display: inline-block;
-}
-
-ul{
+.page {
+    position: relative;
     display: flex;
-    gap: 10px;
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    justify-content: space-around;
+    justify-content: center;
 }
 
 
-
-@keyframes turn {
-    0% {
-        transform: rotate(0deg);
-    }
-    100%{
-        transform: rotate(360deg);
-    }
-}
-
-.gazo{
+.cover {
     width: 100px;
     height: 100px;
     object-fit: cover;
@@ -42,14 +35,94 @@ ul{
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
+
 }
 
-.disque{
+.disque {
     position: relative;
     display: inline-block;
-    animation: turn 4s infinite linear;
+    animation: turn 4s infinite linear ;
 }
 
-.pause {
+h1 {
+    text-align: center;
+}
+
+
+.navigation {
+    display: flex;
+    gap: 10px;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.play{
+    display: flex;
+    justify-content: center;
+}
+
+@keyframes turn {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes lecture {
+    0% {
+        transform: rotate(270deg);
+    }
+
+    100% {
+        transform: rotate(310deg);
+    }
+}
+
+.pause{
     animation-play-state: paused;
 }
+
+
+#playlist{
+    display: none;
+    background-color: rgba(0, 0, 255, 0.2);
+    text-align: center;
+}
+
+.listmusic {
+    gap: 10px;
+    list-style: none;
+}
+
+#btnplay{
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background-color: rgba(0, 0, 255, 0);
+}
+
+.play_pause{
+    width: 45px;
+    height: 45px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+#btnrandom{
+    position: absolute;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    top: 55%;
+    left: 55%;
+    background-color: rgba(0, 0, 255, 0);
+}
+

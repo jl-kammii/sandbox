@@ -1,54 +1,56 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Page d'accueil DJ_Zinzin</title>
-    <link rel="stylesheet" href="assets/css/style.css">
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/style.css" />
     <script src="assets/js/app.js" defer></script>
-</head>
-<body>
-        <header>
-            <nav>
-                    <ul>
-                            <li>
-                                Acceuil
-                            </li>
-                            <li>
-                                Liste musique
-                            </li>
-                            <li>
-                                Contact
-                            </li>
+    <title>Page d'accueil - Micky Music</title>
+  </head>
 
-
-                    </ul>
-
-
-            </nav>
-
-
-
-
-
-
-        </header>
-    <div class="div1">
+  <body>
+    <header>
+      <nav>
+        <ul class="navigation">
+          <li id="accueil">Accueil</li>
+          <li>
+            <button id="liste">Liste Musique</button>
+          </li>
+          <li id="contact">Contact</li>
+        </ul>
+      </nav>
+    </header>
     <h1>Page d'accueil</h1>
-    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quibusdam officia suscipit, error aspernatur, recusandae impedit quos molestiae consequatur aperiam natus perspiciatis voluptas ratione! Aperiam saepe laudantium autem quia animi minus!</p>
+    <div class="page">
+      <div class="disque pause">
+        <img class="vinyl" src="assets/pictures/vinyle.png" alt="disque_vinyl" />
+        <img class="cover" src="assets/pictures/gazo.jpg" alt="cover_rde" />
+      </div>
+    </div>
+    <div class="play">
+      <button id="btnplay">
+        <img
+          class="play_pause"
+          src="assets/pictures/bouton.png"
+          alt="bouton_play_pause"
+        />
+      </button>
+    </div>
 
-    <div class="disque pausegit">
-    <img class="vinyle" src="assets/pictures/vinyle.png" alt="disque vinyle">
-    <img class="gazo" src="assets/pictures/gazo.jpg" alt="gazo KRICK PAW">
-</div>
-</div>
+    <div class="random">
+      <button id="btnrandom">
+        <img
+          class="play_pause"
+          src="assets/pictures/random.jpg"
+          alt="bouton_random"
+        />
+      </button>
+    </div>
 
-<span class="div2">
+    <audio src="assets/audio/GazoNotreDame.mp3" id="audio"></audio>
 
-</span>
-    <p>Coucou</p>
-    <button id="btnPause">Mettre le disque en pause</button>
-    <audio src="assets/audio/GazoNotreDame.mp3" controls
-    autoplay></audio>
-</body>
+    <div id="playlist">
+      <ul class="listmusic"></ul>
+    </div>
+  </body>
 </html>

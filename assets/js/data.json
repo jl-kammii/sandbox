@@ -1,0 +1,44 @@
+[
+  {
+  "id" : 1,
+  "artiste" : "Gazo",
+  "nom": "Notre Damme",
+  "lien": "GazoNotreDame.mp3",
+  "cover": "notredame.jpg"
+},
+{
+  "id" : 2,
+  "artiste" : "Gazo",
+  "nom": "Mamie wata",
+  "lien": "GazoMamieWata.mp3",
+  "cover": "mamiewata.png"
+},
+{
+  "id" : 3,
+  "artiste" : "Gazo",
+  "nom": "Fleurs",
+  "lien": "GazoFleur.mp3",
+  "cover": "fleur.jpg"
+},
+{
+  "id" : 4,
+  "artiste" : "Ninho",
+  "nom": "Zipette",
+  "lien": "NinhoZipette.mp3",
+  "cover": "ninho-zipette.jpg"
+},
+{
+  "id" : 5,
+  "artiste" : "Booba",
+  "nom": "Pitbull",
+  "lien": "BoobaPitbull.mp3",
+  "cover": "booba-pitbull.jpg"
+},
+{
+  "id" : 6,
+  "artiste" : "SDM",
+  "nom": "Bolide Allemand",
+  "lien": "SdmBolideAllemand.mp3",
+  "cover": "sdm-bolide.jpg"
+}
+]
