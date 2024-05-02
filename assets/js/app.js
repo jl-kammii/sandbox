@@ -19,13 +19,13 @@ const config = {
 };
 
 const getData = async () => {
-  const req = await fetch("./assets/js/data.json");
+  const req = await fetch("https://api-jukebox-ehw8.onrender.com/api/v1/music");
   const dbmusic = await req.json();
-  data = dbmusic; // Stockez les données dans la variable data globale
+  data = dbmusic.result; // Stockez les données dans la variable data globale
 
-  dbmusic.forEach((musique) => {
+  data.forEach((musique) => {
     const liElement = document.createElement("li");
-    liElement.innerHTML = `<li id=${musique.id}><h2>${musique.nom}</h2> <img src="${config.urlCover}${musique.cover}" alt ="${musique.title}" ><div><small>${musique.artiste}</small></div></li>`;
+    liElement.innerHTML = `<li id=${musique.id}><h2>${musique.nom}</h2> <img src="${config.urlCover}${musique.cover}" alt ="${musique.title}" ><div><small>${musique.category}</small></div></li>`;
     playlist.appendChild(liElement);
 
     liElement.addEventListener("click", () => {
