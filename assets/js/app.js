@@ -25,7 +25,7 @@ const getData = async () => {
 
   data.forEach((musique) => {
     const liElement = document.createElement("li");
-    liElement.innerHTML = `<li id=${musique.id}><h2>${musique.nom}</h2> <img src="${config.urlCover}${musique.cover}" alt ="${musique.title}" ><div><small>${musique.category}</small></div></li>`;
+    liElement.innerHTML = `<li id=${musique.id}><h2>${musique.nom}</h2> <img src="${config.urlCover}${musique.cover}" alt ="${musique.title}" ><div><small>${musique.artiste}</small></div></li>`;
     playlist.appendChild(liElement);
 
     liElement.addEventListener("click", () => {
